@@ -1,4 +1,5 @@
 import Carousel from "./components/carousel/carousel";
+import Features from "./components/features/features";
 import Hero from "./components/hero/hero";
 import Navbar from "./components/navbar/navbar";
 
@@ -8,6 +9,7 @@ function App() {
       <Navbar />
       <Hero />
       <Carousel />
+      <Features />
     </div>
   );
 }
