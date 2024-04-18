@@ -1,0 +1,76 @@
+.carousel {
+  width: 80%;
+  margin: 50px auto;
+  border: 1px rgba(203, 213, 225, 1) solid;
+  text-align: center;
+  padding: 20px 0;
+  background-color: white;
+  border-radius: 10px;
+
+  @media screen and (max-width: 426px) {
+    width: 100%;
+    border-bottom: 4px rgba(203, 213, 225, 1) solid;
+    border-radius: 0px;
+  }
+
+  &__title {
+    margin: 20px 0px;
+    background-color: white;
+    color: rgba(148, 163, 184, 1);
+    font-weight: 400;
+    font-size: 20px;
+  }
+
+  &__logos {
+    overflow: hidden;
+    padding: 40px 0;
+    background: white;
+    white-space: nowrap;
+    position: relative;
+
+    &:before,
+    &:after {
+      position: absolute;
+      top: 0;
+      width: 250px;
+      height: 100%;
+      content: "";
+      z-index: 2;
+    }
+
+    &:before {
+      left: 0;
+      background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+    }
+
+    &:after {
+      right: 0;
+      background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+    }
+
+    &:hover .logos-slide {
+      animation-play-state: paused;
+    }
+  }
+
+  &__logos__slide {
+    display: inline-block;
+    animation: 100s slide infinite linear;
+    background-color: white;
+
+    img {
+      height: 40px;
+      margin: 0 40px;
+      background-color: white;
+    }
+  }
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
