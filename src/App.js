@@ -1,4 +1,5 @@
 import Carousel from "./components/carousel/carousel";
+import Customers from "./components/customers/customers";
 import Features from "./components/features/features";
 import Hero from "./components/hero/hero";
 import Integrations from "./components/integrations/integrations";
@@ -12,6 +13,7 @@ function App() {
       <Carousel />
       <Features />
       <Integrations />
+      <Customers />
     </div>
   );
 }
