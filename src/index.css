@@ -15,6 +15,7 @@ code {
 * {
   margin: 0;
   padding: 0;
-  background-color: #dceef8;
+  /* background-color: #dceef8; */
+  background-color: #e3f0f9;
   font-family: "Inter", sans-serif;
 }
