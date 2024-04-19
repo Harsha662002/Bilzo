@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./navbar.module.scss";
 
 const Navbar = () => {
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
   return (
     <div>
       <header>
@@ -14,7 +19,11 @@ const Navbar = () => {
             />
           </div>
           <div className={styles.navbar__right}>
-            <div className={styles.navbar__links}>
+            <div
+              className={`${styles.navbar__links} ${
+                isDropdownOpen ? styles.showDropdown : ""
+              }`}
+            >
               <ul>
                 <li>
                   <a href="#" className={styles.navbar__link}>
@@ -39,12 +48,16 @@ const Navbar = () => {
                 </li>
               </ul>
             </div>
-            <button className={styles.navbar__start__trial__btn}>
+            <button
+              className={`${styles.navbar__start__trial__btn} ${
+                isDropdownOpen ? styles.showDropdown : ""
+              }`}
+            >
               Start Trial
             </button>
           </div>
         </nav>
-        <label class={styles.hamburger}>
+        <label class={styles.hamburger} onClick={toggleDropdown}>
           <div></div>
           <div></div>
           <div></div>
