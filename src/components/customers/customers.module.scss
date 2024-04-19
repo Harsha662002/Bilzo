@@ -1,0 +1,108 @@
+.container {
+  background-color: white;
+  @media screen and (max-width: 426px) {
+    display: none;
+  }
+}
+
+.customers {
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  margin: 0 auto;
+  background-color: white;
+  padding: 50px 0;
+
+  &__title {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 52px;
+    background: linear-gradient(
+      to right,
+      rgba(45, 86, 236, 1),
+      rgba(26, 172, 234, 1)
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-family: "Extatica", sans-serif;
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-top: 60px;
+    background-color: white;
+  }
+
+  &__card1,
+  &__card2,
+  &__card3 {
+    width: 300px;
+    height: auto;
+    border-radius: 12px;
+    padding: 24px;
+  }
+
+  &__card1 {
+    border: 1px solid rgba(54, 94, 238, 0.5);
+    background-color: #e5eafb;
+  }
+
+  &__card2 {
+    border: 1px solid rgba(26, 172, 234, 0.5);
+    background-color: #e3f2fa;
+  }
+
+  &__card3 {
+    border: 1px solid rgba(36, 128, 235, 0.5);
+    background-color: #e4eefa;
+  }
+
+  &__card__content {
+    background-color: inherit;
+    text-align: left;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+    color: rgba(100, 116, 139, 1);
+  }
+
+  &__profile {
+    display: flex;
+    background-color: inherit;
+    margin-top: 20px;
+    img {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+      border-radius: 50%;
+    }
+  }
+
+  &__profile__details {
+    img,
+    p {
+      background-color: inherit;
+    }
+  }
+
+  &__profile__details--name {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+    color: rgba(71, 85, 105, 1);
+    text-align: left;
+  }
+
+  &__profile__details--designation {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    color: rgba(100, 116, 139, 1);
+    text-align: left;
+    margin-top: 4px;
+  }
+}
