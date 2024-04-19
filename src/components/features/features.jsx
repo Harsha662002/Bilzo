@@ -118,7 +118,12 @@ const Features = () => {
               <div className={Styles.features__rectangle}></div>
               <img src="../assets/scan_bill.png" alt="Logo" />
             </div>
-            <div className={Styles.features__item__title}>Scan any Bill</div>
+            <div
+              className={`${Styles.features__item__title} 
+            ${Styles["features__item__title--text"]}`}
+            >
+              Scan any Bill
+            </div>
           </div>
           <div className={Styles.features__content}>
             <p>

@@ -1,0 +1,117 @@
+.integrations {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #dceef8;
+  margin: 30px auto;
+  padding: 50px 0 80px;
+
+  @media screen and (max-width: 426px) {
+    padding: 50px 0;
+  }
+
+  h1 {
+    text-align: center;
+    background: linear-gradient(
+      to right,
+      rgba(45, 86, 236, 1),
+      rgba(26, 172, 234, 1)
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-color: #dceef8;
+  }
+
+  &__dropdown img {
+    background-color: #dceef8;
+
+    @media screen and (max-width: 426px) {
+      display: none;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-top: -30px;
+
+    @media screen and (max-width: 426px) {
+      flex-direction: column;
+      margin-top: 30px;
+    }
+  }
+
+  &__card1,
+  &__card2,
+  &__card3 {
+    width: 350px;
+    height: auto;
+    padding: 20px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (max-width: 426px) {
+      width: 320px;
+    }
+  }
+
+  &__card1 {
+    border: 1px rgba(252, 180, 40, 1) solid;
+    background: #f8f5ec;
+  }
+
+  &__card2 {
+    background: linear-gradient(
+      to bottom right,
+      #f2f7f3,
+      rgba(108, 184, 32, 0.2)
+    );
+    border: 1px rgba(108, 184, 32, 1) solid;
+  }
+
+  &__card3 {
+    background: linear-gradient(
+      to bottom right,
+      #e4eafb,
+      rgba(54, 94, 238, 0.2)
+    );
+    border: 1px rgb(54, 94, 238) solid;
+  }
+
+  &__card__title {
+    display: flex;
+    align-items: center;
+    background: none;
+  }
+
+  &__logo {
+    background: none;
+
+    img {
+      width: 30px;
+      height: 30px;
+      padding: 6px;
+      background: none;
+    }
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+    color: rgba(71, 85, 105, 1);
+    background: none;
+  }
+
+  &__card__content {
+    margin: 10px 0 0 0;
+    background: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(100, 116, 139, 1);
+  }
+}
