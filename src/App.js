@@ -10,7 +10,7 @@ import Trial from "./components/trial/trial";
 function App() {
   return (
     <div className="App">
-      {/* <Navbar /> */}
+      <Navbar />
       <Hero />
       <Carousel />
       <Features />
